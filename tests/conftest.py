@@ -1,8 +1,9 @@
 import allure
 
+
 def pytest_runtest_setup(item):
-    # Автоматически добавляем label "layer" по pytest-маркерам
     if "api" in item.keywords:
-        allure.dynamic.label("layer", "API Tests")
+        allure.dynamic.label("layer", "api")
+
     if "ui" in item.keywords:
-        allure.dynamic.label("layer", "UI Tests")
+        allure.dynamic.label("layer", "UI")
