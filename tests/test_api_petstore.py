@@ -14,8 +14,7 @@ BASE_URL = "https://petstore.swagger.io/v2"
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.title("API: Получение питомца по id")
 @allure.description(
-    "Тест проверяет, что Swagger Petstore возвращает данные питомца по существующему id. "
-    "Используется как простой и стабильный пример API-теста."
+    "Тест проверяет, что Swagger Petstore возвращает данные питомца по существующему id."
 )
 def test_get_pet_by_id():
     pet_id = 1
