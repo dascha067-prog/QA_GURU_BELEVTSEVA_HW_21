@@ -5,7 +5,7 @@ import requests
 
 BASE_URL = "https://petstore.swagger.io/v2"
 
-
+@pytest.mark.api
 @allure.epic("Allure Examples")
 @allure.feature("API")
 @allure.story("Swagger Petstore")

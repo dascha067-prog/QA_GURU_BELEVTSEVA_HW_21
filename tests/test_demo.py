@@ -1,6 +1,8 @@
 import allure
+import pytest
 
 
+@pytest.mark.ui
 @allure.epic("Allure Examples")
 @allure.feature("Basic pytest test")
 @allure.story("Simple math validation")
